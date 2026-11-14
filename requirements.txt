@@ -6,3 +6,6 @@ dvc
 pyyaml
 pytest
 ruff
+matplotlib
+seaborn
+ipykernel

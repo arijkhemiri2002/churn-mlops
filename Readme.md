@@ -174,4 +174,4 @@ Convention de commits : `feat:`, `fix:`, `docs:`, `ci:`, `chore:`, `test:`, `ref
 
 ## Auteur
 
-**Arij** · [GitHub](https://github.com/<arijkhemiri2002>)
+**Arij** · [GitHub](https://github.com/arijkhemiri2002)

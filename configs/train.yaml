@@ -1,0 +1,34 @@
+seed: 42
+
+data:
+  raw_path: data/raw/telco_churn.csv
+  dvc_file: data/raw/telco_churn.csv.dvc
+  test_size: 0.2
+
+mlflow:
+  tracking_uri: sqlite:///mlflow.db
+  experiment_name: churn-prediction
+
+# Models below this recall must never be promoted (used again in CI, chapter 9)
+quality_gate:
+  min_recall: 0.75
+
+models:
+  logistic_regression:
+    C: 1.0
+    max_iter: 1000
+    class_weight: balanced
+
+  random_forest:
+    n_estimators: 300
+    max_depth: 8
+    class_weight: balanced
+    n_jobs: -1
+
+  xgboost:
+    n_estimators: 300
+    max_depth: 4
+    learning_rate: 0.05
+    subsample: 0.8
+    colsample_bytree: 0.8
+    scale_pos_weight: 2.77   # ~ non-churn / churn ratio in the dataset

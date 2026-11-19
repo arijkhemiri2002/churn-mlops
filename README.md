@@ -152,8 +152,8 @@ Convention de commits : `feat:`, `fix:`, `docs:`, `ci:`, `chore:`, `test:`, `ref
 
 - [x] **1. Cadrage** : problème, métriques, cycle de vie
 - [x] **2. Versioning** : Git et DVC
-- [ ] **3. Tracking** : expériences MLflow
-- [ ] **4. Model Registry** : promotion Staging → Production
+- [x] **3. Tracking** : expériences MLflow
+- [x] **4. Model Registry** : promotion Staging → Production
 - [ ] **5. API** : service FastAPI (`/predict`, `/health`, `/metrics`)
 - [ ] **6. Docker** : image multi-stage et stack docker-compose
 - [ ] **7. Orchestration** : pipeline ingest → train → register
